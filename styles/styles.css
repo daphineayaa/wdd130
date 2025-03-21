@@ -7,7 +7,7 @@ body {
     text-align: center;
 }
 header {
-    background: #660005;
+    background: #660000;
     color: white;
     padding: 15px 0;
 }
@@ -32,7 +32,7 @@ aside {
     width: 80%;
     max-width: 600px;
     margin: 20px auto;
-    border: 2px solid #660016;
+    border: 2px solid #660000;
     padding: 15px;
     background-color: #e0e0e0;
     color: #000;
@@ -45,7 +45,7 @@ p {
     padding: 0; /* Ensures 0 padding as required */
 }
 footer {
-    background: #660008;
+    background: #660000;
     color: rgb(255, 255, 255);
     padding:50px;
     margin-top: 20px;
