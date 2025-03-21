@@ -1,10 +1,11 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Website</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
     <header>
@@ -41,3 +42,58 @@
     </footer>
 </body>
 </html>
+=======
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+header {
+    background: #036600;
+    color: white;
+    padding: 15px 0;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+main {
+    padding: 20px;
+    max-width: 800px; /* Restrict main width */
+    margin: 0 auto;
+}
+main img {
+    width: 150px;
+    height: auto;
+    border-radius: 50%;
+    margin: 15px 0;
+}
+aside {
+    width: 80%;
+    max-width: 600px;
+    margin: 20px auto;
+    border: 2px solid #660016;
+    padding: 15px;
+    background-color: #e0e0e0;
+    color: #000;
+}
+aside img {
+    width: 200px;
+    height: auto;
+}
+p {
+    padding: 0; /* Ensures 0 padding as required */
+}
+footer {
+    background: #006627;
+    color: white;
+    padding:50px;
+    margin-top: 20px;
+    border-top: 2px solid white;
+    text-align: center;
+}
+>>>>>>> eae6a61039966009a123ea1e031dce25117dd0d2
