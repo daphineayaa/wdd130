@@ -1,0 +1,58 @@
+/* Theme Name: Rafting */
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1;
+  color: #333;
+  background-color: #caeaf7;
+}
+
+header {
+  background-color: #04313fe1;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+header img {
+  width: 20px;
+  height: 100px;
+  margin-left: 20px;
+  border-radius: 10%;
+}
+
+.hero {
+  background-image: linear-gradient(to bottom, #4CAF50, #8BC34A);
+  background-size: 10% 10px;
+  background-position: 0% 100%;
+  height: 100px;
+  display: flow-roots;
+  justify-content: left;
+  align-items: center;
+  padding: 10px;
+  color: #fff;
+}
+
+.about-content {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #f7f7f7;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-content h2 {
+  margin-top: 100px;
+  color: #2E4053;
+}
+
+footer {
+  background-color: #012435da;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  clear: both;
+}
+
+footer p {
+  margin-bottom: 0;
+}
