@@ -2,9 +2,10 @@
 
 body {
   font-family: Arial, sans-serif;
-  line-height: 1;
   color: #333;
-  background-color: #caeaf7;
+  background-color: #428aa7;
+  width: 1200px;
+  margin: 0 auto;
 }
 
 header {
@@ -22,27 +23,7 @@ header img {
 }
 
 .hero {
-  background-image: linear-gradient(to bottom, #4CAF50, #8BC34A);
-  background-size: 10% 10px;
-  background-position: 0% 100%;
-  height: 100px;
-  display: flow-roots;
-  justify-content: left;
-  align-items: center;
-  padding: 10px;
   color: #fff;
-}
-
-.about-content {
-  margin-top: 20px;
-  padding: 20px;
-  background-color: #f7f7f7;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.about-content h2 {
-  margin-top: 100px;
-  color: #2E4053;
 }
 
 footer {
