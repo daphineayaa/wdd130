@@ -82,7 +82,58 @@
     font-size: 1.2rem;
     line-height: 1.6;
   }
-  
+  /* Contact Info */
+.company-info {
+  display: flex;
+  justify-content: space-between;
+  background: #f4f4f4;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.company-info p, .company-info a {
+  color: #333;
+  margin: 5px 0;
+}
+
+.company-info a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.company-info a:hover {
+  text-decoration: underline;
+}
+
+/* Contact Form */
+.contact-form {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact-form input[type="submit"] {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.contact-form input[type="submit"]:hover {
+  background: #0056b3;
+}
+
   
   main {
     padding: 40px;
