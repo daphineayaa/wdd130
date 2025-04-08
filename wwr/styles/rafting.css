@@ -62,7 +62,7 @@ nav a:hover {
     position: absolute;
     top: 0;
     left: 0;
-    z-index: -1; 
+    z-index: -1;
 }
 
 .hero h1 {
@@ -73,7 +73,7 @@ nav a:hover {
     font-size: 3rem;
     color: white;
     text-align: center;
-    z-index: 1; 
+    z-index: 1;
 }
 
 .hero article {
@@ -93,7 +93,7 @@ nav a:hover {
 .hero article p {
     font-size: 1.2rem;
     line-height: 1.6;
-    flex: 1; 
+    flex: 1;
 }
 
 .hero article .small-image {
@@ -196,8 +196,40 @@ footer .social-icons {
 footer .social-icons i {
     font-size: 2rem;
     cursor: pointer;
+    transition: color 0.3s; /* Add hover effect */
+}
+
+footer .social-icons i:hover {
+    color: #FFD700; /* Change color on hover */
 }
 
 footer p {
     margin-top: 10px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5rem; /* Adjust font size for smaller screens */
+    }
+
+    .hero article {
+        flex-direction: column;
+        text-align: center;
+        width: 90%;
+    }
+
+    .history-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .gallery {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .gallery img {
+        width: 100%;
+    }
 }
