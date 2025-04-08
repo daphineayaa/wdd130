@@ -4,37 +4,37 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+  
 body {
     font-family: 'Roboto', sans-serif;
     background-color: #f4f4f4;
     color: #333;
 }
-
+  
 /* Header and Footer */
 header, footer {
     background-color: #0077B6;
     color: white;
     text-align: center;
+    padding: 30px 20px;
 }
-
+  
 header {
-    padding: 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-
+  
 header .logo {
     width: 150px;
 }
-
+  
 nav ul {
     list-style-type: none;
     display: flex;
     gap: 20px;
 }
-
+  
 nav a {
     color: white;
     text-decoration: none;
@@ -43,7 +43,7 @@ nav a {
     text-transform: uppercase;
     transition: color 0.3s;
 }
-
+  
 nav a:hover {
     color: #FFD700;
 }
@@ -54,7 +54,7 @@ nav a:hover {
     width: 100%;
     height: 98vh;
 }
-
+  
 .hero-image {
     width: 100%;
     height: 90%;
@@ -62,20 +62,20 @@ nav a:hover {
     position: absolute;
     top: 0;
     left: 0;
-    z-index: -1;
+    z-index: -1; 
 }
-
+  
 .hero h1 {
     position: absolute;
-    top: 20%;
+    top: 20%; 
     left: 50%;
     transform: translateX(-50%);
     font-size: 3rem;
     color: white;
     text-align: center;
-    z-index: 1;
+    z-index: 1; 
 }
-
+  
 .hero article {
     position: absolute;
     top: 60%;
@@ -89,18 +89,18 @@ nav a:hover {
     background: rgba(0, 0, 0, 0.6);
     color: white;
 }
-
+  
 .hero article p {
     font-size: 1.2rem;
     line-height: 1.6;
-    flex: 1;
+    flex: 1; 
 }
-
+  
 .hero article .small-image {
-    width: 150px;
+    width: 150px; 
     height: auto;
     border-radius: 10px;
-    margin-left: 20px;
+    margin-left: 20px; 
 }
 
 /* Main Content */
@@ -109,7 +109,7 @@ main {
     max-width: 1200px;
     margin: 0 auto;
 }
-
+  
 h2 {
     font-size: 2.5rem;
     margin-bottom: 20px;
@@ -120,7 +120,7 @@ h2 {
     padding: 40px;
     background-color: #ffffff;
 }
-
+  
 .history-container {
     display: flex;
     justify-content: space-between;
@@ -128,13 +128,13 @@ h2 {
     gap: 30px;
     flex-wrap: wrap;
 }
-
+  
 .history-text {
     flex: 1;
     font-size: 1.1rem;
     line-height: 1.6;
 }
-
+  
 .history-image img {
     width: 100%;
     height: auto;
@@ -142,29 +142,29 @@ h2 {
     border-radius: 10px;
 }
 
-/* Gallery Section */
+/* Adventure Awaits You Section */
 .gallery {
     display: flex;
     gap: 20px;
     overflow-x: auto;
     padding: 20px 0;
 }
-
+  
 .gallery figure {
     position: relative;
 }
-
+  
 .gallery img {
     width: 120px;
     height: auto;
     border-radius: 10px;
     transition: transform 0.3s;
 }
-
+  
 .gallery img:hover {
     transform: scale(1.05);
 }
-
+  
 .gallery figcaption {
     position: absolute;
     bottom: 10px;
@@ -175,61 +175,35 @@ h2 {
     padding: 5px 10px;
 }
 
-/* Center Headings */
-.hero h1,
-.history-section h2,
-main > section h2 {
-    text-align: center;
-}
-
 /* Footer */
 footer {
-    padding: 20px;
-}
-
-footer .social-icons {
     display: flex;
-    justify-content: flex-end; /* Align icons to the right */
-    gap: 15px;
-}
-
-footer .social-icons i {
-    font-size: 2rem;
-    cursor: pointer;
-    transition: color 0.3s; /* Add hover effect */
-}
-
-footer .social-icons i:hover {
-    color: #FFD700; /* Change color on hover */
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    flex-direction: column; /* Stack content vertically */
 }
 
 footer p {
     margin-top: 10px;
 }
 
-/* Media Queries */
-@media (max-width: 768px) {
-    .hero h1 {
-        font-size: 2.5rem; /* Adjust font size for smaller screens */
-    }
+/* Social Icons - Positioned to the Right */
+.social-icons {
+    display: flex;
+    gap: 15px;
+    justify-content: flex-end; /* Align icons to the right */
+    width: 100%; /* Ensures the icons stay on the right side */
+}
 
-    .hero article {
-        flex-direction: column;
-        text-align: center;
-        width: 90%;
-    }
+.social-icons i {
+    font-size: 2rem;
+    cursor: pointer;
+}
 
-    .history-container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .gallery {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .gallery img {
-        width: 100%;
-    }
+/* Center Headings */
+.hero h1,
+.history-section h2,
+main > section h2 {
+    text-align: center;
 }
