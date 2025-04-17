@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Get in touch with us for your whitewater rafting adventure. We are here to answer your questions and help you plan your trip!">
+  <meta name="author" content="Ayaa Daphine">
+  <title>Contact - Whitewater Rafting Company</title>
+  <link rel="stylesheet" href="styles/rafting.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&family=Roboto:wght@300;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="header-content">      
+      <img src="images/logo.jpg" alt="Whitewater Rafting Logo" class="logo">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="trips.html">Trips</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Contact Us</h1>
+
+    <div class="company-info">
+      <div class="info-left">
+        <p>Whether you have a question about our services, need assistance with a booking, or just want to share your experience, we are here to help!</p>
+        <p>Whitewater Rafting</p>
+        <p> Aruu falls, Uganda 12345</p>
+      </div>
+      <div class="info-right">
+        <p>Phone: +256 786 085 145</p>
+        <p>Email: ayaadaphine0@gmail.com</p>
+      </div>
+    </div>
+    
+    <section class="map-section">
+      <h2>Find Us Here</h2>
+      <p>We are located at Aruu Falls, Pader District, Uganda. Come visit us and experience the thrill of whitewater rafting!</p>
+    <iframe 
+  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15887.109013734253!2d33.676949!3d3.539361!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x177ce67b8f84e1c1%3A0xa1d9e98351a0ec5d!2sAruu%20Falls%2C%20Pader%20District%2C%20Uganda!5e0!3m2!1sen!2sus!4v1680902874094!5m2!1sen!2sus"
+  width="500" 
+  height="250" 
+  style="border:0;" 
+  allowfullscreen="" 
+  loading="lazy">
+</iframe>
+    </section>
+
+    <section class="contact-form">
+      <h2>Send Us a Message</h2>
+      <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone"><br><br>
+
+        <label for="purpose">Purpose:</label>
+        <select id="purpose" name="purpose">
+          <option value="general-inquiry">General Inquiry</option>
+          <option value="reservation">Reservation</option>
+          <option value="question">Question</option>
+          <option value="website-suggestion">Website Suggestion</option>
+        </select><br><br>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5"></textarea><br><br>
+
+        <label for="newsletter">Please subscribe me to the monthly newsletter:</label>
+        <input type="checkbox" id="newsletter" name="newsletter"><br><br>
+
+        <label>How did you hear about us?</label>
+        <input type="radio" id="friend" name="referral" value="friend">
+        <label for="friend">Friend</label>
+        <input type="radio" id="online" name="referral" value="online">
+        <label for="online">Online</label>
+        <input type="radio" id="advertisement" name="referral" value="advertisement">
+        <label for="advertisement">Advertisement</label><br><br>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+
+    <section>
+      <h2>Adventure Awaits You</h2>
+      <div class="gallery">
+        <figure>
+          <img src="images/rafting1.jpeg" alt="Rafting adventure 1">
+          <figcaption>calm waters</figcaption>
+        </figure>
+        <figure>
+          <img src="images/rafting2.jpeg" alt="Rafting adventure 2">
+          <figcaption>rapids</figcaption>
+        </figure>
+        <figure>
+          <img src="images/rafting3.jpeg" alt="Rafting adventure 3">
+          <figcaption>whitewater rapids</figcaption>
+        </figure>
+        <figure>
+          <img src="images/rafting4.jpeg" alt="Rafting adventure 4">
+          <figcaption>breathtaking scenery</figcaption>
+        </figure>
+        <figure>
+          <img src="images/rafting5.jpeg" alt="Rafting adventure 5">
+          <figcaption>riverbank</figcaption>
+        </figure>
+        <figure>
+          <img src="images/rafting6.jpeg" alt="Rafting adventure 6">
+          <figcaption>unforgettable rafting </figcaption>
+        </figure>
+        <figure>
+          <img src="images/rafting7.jpeg" alt="Rafting adventure 7">
+          <figcaption>lifelong memories</figcaption>
+        </figure>
+      </div>
+      <p>Ready to experience the thrill of whitewater rafting? Book your adventure today!</p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="social-icons">
+      <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+      <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+      <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+    </div>
+    <p>&copy; 2025 Whitewater Rafting. All rights reserved.</p>
+  </footer>
+</body>
+</html>

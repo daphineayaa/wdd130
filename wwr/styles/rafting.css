@@ -1,0 +1,380 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header and Footer */
+header, footer {
+    background-color: #0077B6;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    width: 150px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 18px;
+    text-transform: uppercase;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #FFD700;
+
+}
+ /* Hero Section */
+    .hero {
+        position: relative;
+        width: 100%;
+        height: 95vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        text-align: left;
+    }
+    
+    .hero-image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: -1;
+        filter: brightness(60%);
+    }
+    
+    .hero-content {
+        z-index: 1;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 1000px;
+        padding: 40px;
+        background: rgba(0, 0, 0, 0.4);  /* Lighter background for text visibility */
+        border-radius: 12px;
+        color: #fff;
+        animation: fadeIn 1.5s ease-out;
+    }
+    
+    .hero h1 {
+        font-size: 3.5rem;
+        margin-bottom: 20px;
+        font-weight: 700;
+        letter-spacing: 1px;
+    }
+    
+    .hero p {
+        font-size: 1.3rem;
+        line-height: 1.7;
+        margin-bottom: 30px;
+        max-width: 500px;  /* Limit paragraph width */
+    }
+    
+    .hero-btn {
+        display: inline-block;
+        padding: 15px 30px;
+        background-color: #FFD700;
+        color: #000;
+        font-size: 1.1rem;
+        font-weight: 600;
+        border-radius: 30px;
+        text-decoration: none;
+        transition: background-color 0.3s ease;
+    }
+    
+    .hero-btn:hover {
+        background-color: #ffc400;
+    }
+    
+    .hero .small-image {
+        width: 300px;
+        height: auto;
+        border-radius: 10px;
+        margin-left: 20px;
+    }
+    
+
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+/* Main Content */
+main {
+    padding: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* History Section */
+.history-section {
+    padding: 40px;
+    background-color: #ffffff;
+}
+
+.history-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.history-text {
+    flex: 1;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.history-image img {
+    width: 100%;
+    height: auto;
+    max-width: 500px;
+    border-radius: 10px;
+}
+
+/* Adventure Awaits You Section */
+.gallery {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    padding: 20px 0;
+}
+
+.gallery figure {
+    position: relative;
+}
+
+.gallery img {
+    width: 120px;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+.gallery figcaption {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    font-size: 1rem;
+    padding: 5px 10px;
+}
+
+/* Footer */
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    flex-direction: column;
+}
+
+footer p {
+    margin-top: 10px;
+}
+
+/* Social Icons */
+.social-icons {
+    display: flex;
+    gap: 15px;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.social-icons i {
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+/* Contact Section */
+.contact-box {
+    background-color: #ffffff;
+    padding: 30px;
+    margin-top: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.company-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.info-left,
+.info-right {
+    flex: 1;
+    padding: 10px;
+}
+
+.contact-form h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+
+.contact-form input, 
+.contact-form select, 
+.contact-form textarea {
+    width: 80%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    width: 80%;
+    padding: 15px;
+    background-color: #0077B6;
+    color: white;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #005f82;
+}
+
+/* Home Page Extras */
+.newsletter, .cta {
+    background-color: #ffffff;
+    padding: 30px;
+    margin-top: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.newsletter input[type="email"] {
+    padding: 10px;
+    width: 60%;
+    max-width: 300px;
+    margin: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.newsletter button {
+    padding: 10px 20px;
+    background-color: #0077B6;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.newsletter button:hover {
+    background-color: #005f82;
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+/* Trips Page Styles */
+.trips-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.trip-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+    text-align: center;
+}
+
+.trip-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.trip-card:hover {
+    transform: translateY(-5px);
+}
+
+.trip-card h3 {
+    margin-bottom: 10px;
+    font-size: 1.4rem;
+    color: #0077B6;
+}
+
+.trip-card p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+/* Our Rafting Trips Section */
+.our-rafting-trips-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    width: 100%;
+}
+
+.trips-heading {
+    font-size: 3rem;
+    color: #151616f5;
+    margin: 0;
+    text-align: center;
+    flex: 0 1 auto;
+}
